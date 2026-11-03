@@ -1,6 +1,6 @@
-# Buscador inmobiliario
+# INMO TRACKER
 
-Base inicial para reunir y ordenar avisos de alquiler. Esta versión **no consulta portales, no ejecuta Playwright y no se despliega**. Su objetivo es dejar acordados el modelo de búsqueda, el panel y los límites de una futura integración autorizada.
+Buscador inmobiliario inteligente para centralizar oportunidades de alquiler. Esta versión **no consulta portales, no ejecuta Playwright y no se despliega**. Su objetivo es dejar acordados el modelo de búsqueda, el panel y los límites de una futura integración autorizada.
 
 ## Criterio de búsqueda acordado
 
@@ -24,6 +24,9 @@ Base inicial para reunir y ordenar avisos de alquiler. Esta versión **no consul
 - `backend/`: API FastAPI mínima y contrato para conectores. La ejecución de conectores está bloqueada por configuración.
 - `docs/PORTALES_Y_CUMPLIMIENTO.md`: resultado del relevamiento inicial y requisitos antes de habilitar fuentes.
 - `docs/DECISIONES.md`: decisiones de la primera versión.
+- `docs/ARQUITECTURA.md`: límites entre panel, API, conectores, motor y persistencia.
+- `docs/FUENTES_AUTORIZADAS.md`: estado de autorización por proveedor.
+- `.env.example`: nombres de variables; no contiene secretos.
 
 ## Desarrollo local
 
