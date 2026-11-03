@@ -15,7 +15,6 @@ class ConnectorStatus:
 
 
 CONNECTORS = (
-    ConnectorStatus("Mercado Libre Inmuebles"),
     ConnectorStatus("Argenprop"),
     ConnectorStatus("ZonaProp"),
 )

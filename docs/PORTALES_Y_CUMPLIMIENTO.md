@@ -1,6 +1,6 @@
 # Portales y cumplimiento
 
-Fecha de relevamiento inicial: 2026-11-03. Este documento no autoriza ninguna extracción; registra qué falta validar antes de habilitar una fuente.
+Fecha de relevamiento inicial: 2026-11-03. Alcance: Argenprop y ZonaProp. Este documento no autoriza ninguna extracción; registra qué falta validar antes de habilitar una fuente.
 
 ## Conclusión operativa
 
@@ -8,14 +8,14 @@ No se habilita Playwright, scraping, tareas horarias ni recolección de avisos. 
 
 | Fuente | Hallazgo público | Decisión |
 | --- | --- | --- |
-| Mercado Libre Inmuebles | Existe documentación para una API de inmuebles. Sus términos de desarrolladores prohíben robots, harvesters, spiders y scraping para obtener contenido que no sea entregado por el programa/API; también prohíben evadir límites. | Evaluar únicamente API oficial, con credenciales propias y aprobación del caso de uso. No automatizar la web. |
-| Argenprop | Se localizaron términos de uso públicos. El acceso automatizado y una API pública aplicable a este buscador no quedaron verificados en este relevamiento. | No conectar ni automatizar sin autorización expresa del titular o canal oficial documentado. |
-| ZonaProp | No se verificó una API pública aplicable ni autorización de recolección automática en este relevamiento. | No conectar ni automatizar; solicitar canal/permiso comercial u oficial. |
+| Argenprop | Sus términos prohíben extraer (scraping) contenido o base de datos para listas de inventario u otra información privada, y prohíben copiar, reproducir o distribuir el material. Ofrece búsqueda guardada y alertas nativas para usuarios registrados. No se identificó una API pública para este caso de uso. | Usar las alertas y búsqueda guardada nativas, o solicitar una integración/permiso escrito. No automatizar el sitio con navegador ni extraer avisos. |
+| ZonaProp | Sus términos prohíben usar máquinas, software, herramientas, agentes u otros mecanismos para navegar o buscar distintos de las herramientas del sitio; además restringen la reproducción y uso comercial no autorizado. No se identificó una API pública para este caso de uso. | Usar las herramientas de búsqueda y alertas que el portal ofrezca al usuario, o solicitar una integración/permiso escrito a Navent/Dridco. No automatizar el sitio con navegador ni extraer avisos. |
 
 ## Evidencia y límites del relevamiento
 
-- Mercado Libre: [guía de inmuebles](https://developers.mercadolibre.com.ar/es_ar/tipos-de-publicacion-y-actualizaciones-de-articulos/introduccion-guia-de-inmuebles) y [términos de desarrolladores](https://developers.mercadolibre.com.ar/es_ar-terminos-y-condiciones). La consulta pública de estos recursos devolvió restricciones de acceso desde el verificador, por lo que deben revisarse manualmente al momento de integrar.
-- Argenprop: [términos y condiciones](https://www.argenprop.com/terminoscondiciones). El verificador no pudo abrir la página por la respuesta del sitio; esto no debe interpretarse como permiso.
+- Argenprop: [términos y condiciones](https://www.argenprop.com/TerminosCondiciones), en particular las restricciones sobre copia y extracción, y las funciones de búsquedas guardadas/alertas. La revisión se hizo el 2026-11-03.
+- ZonaProp: [términos y condiciones](https://www.zonaprop.com.ar/terminos.bum), en particular §§ 1.3, 1.5 y 7. La página indica última actualización el 22 de febrero de 2018; se debe confirmar vigencia directamente con el portal antes de cualquier acuerdo.
+- `robots.txt` es una señal técnica, no una autorización contractual. No se utilizará como base suficiente para automatizar ninguna fuente.
 - Los portales pueden cambiar términos, APIs, atributos y límites sin aviso. Confirmar el texto vigente antes de cada activación.
 
 ## Lista de aprobación por fuente
